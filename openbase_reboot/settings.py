@@ -38,7 +38,7 @@ ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["openbase-backend.onrender.com"]
 
 
 # Application definition
@@ -98,7 +98,6 @@ DATABASES = {
         ssl_require=True
     )
 }
-
 
 
 # Password validation
