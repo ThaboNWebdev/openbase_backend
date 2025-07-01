@@ -147,3 +147,6 @@ CORS_ALLOWED_ORIGINS = [
     "https://openbase-api.onrender.com",
       
 ]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+ 
