@@ -51,7 +51,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
-    'rest_framework',    
+    'rest_framework', 
+    'musicplayer',
+    'corsheaders',
+   
 ]
 
 MIDDLEWARE = [
@@ -142,10 +145,15 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
-    "https://ThaboNWebdev.github.io",
-    "https://openbase-api.onrender.com",
+    "https://thabonwebdev.github.io",
       
 ]
+ 
+
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
  
