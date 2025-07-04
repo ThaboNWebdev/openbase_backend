@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OpenBase AI – Admin Upload</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+      color: #fff;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header img {
+      height: 60px;
+      vertical-align: middle;
+    }
+
+    header h1 {
+      display: inline-block;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.5rem;
+      margin-left: 1rem;
+      color: #0ff;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: #222;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #0ff;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0ff;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="file"],
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    input[type="text"],
+    input[type="file"] {
+      background-color: #333;
+      color: #fff;
+    }
+
+    button {
+      background-color: #0ff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00cccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="Gen Muzik logo.png" alt="GEN MUZIK Logo">
+    <h1>OpenBase AI</h1>
+  </header>
+
+  <div class="container">
+    <h2>Upload New Track</h2>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <label for="title">Track Title:</label>
+      <input type="text" name="title" id="title" required>
+
+      <label for="audio">Audio File (.mp3):</label>
+      <input type="file" name="audio" id="audio" accept=".mp3" required>
+
+      <label for="cover">Cover Image (.jpg/.png):</label>
+      <input type="file" name="cover" id="cover" accept=".jpg,.jpeg,.png" required>
+
+      <button type="submit">Upload & Save</button>
+    </form>
+  </div>
+
+</body>
+</html>
